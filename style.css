@@ -1,0 +1,308 @@
+/* Styles généraux */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background-color: #1f2937;
+  color: white;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f9faf8;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #1f2937;
+  color: white;
+  padding: 80px 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  flex: 1;
+  background-color: #6d747d;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e5e7eb;
+}
+
+.btn {
+  background-color: #3882f6;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Information Section */
+.info {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.info h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+  margin-bottom: 50px;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card {
+  max-width: 170px;
+}
+
+.card-image {
+  width: 170px;
+  height: 170px;
+  border: 4px solid #3882f6;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #6d747d;
+}
+
+/* Quote Section */
+.quote {
+  background-color: #e5e7eb;
+  padding: 100px 0;
+}
+
+.quote-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quote-text {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.quote-author {
+  text-align: right;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* CTA Section */
+.cta {
+  padding: 100px 0;
+}
+
+.cta-box {
+  background-color: #3882f6;
+  color: white;
+  border-radius: 10px;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-text h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.cta-text p {
+  color: #e5e7eb;
+}
+
+.cta-btn {
+  background-color: #3882f6;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .info-cards {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .card {
+    max-width: 45%;
+    min-width: 140px;
+  }
+
+  .card-image {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 10px;
+  }
+
+  .quote-text {
+    font-size: 28px;
+  }
+
+  .cta-box {
+    padding: 30px 40px;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-image {
+    height: 200px;
+  }
+
+  .info {
+    padding: 50px 0;
+  }
+
+  .info h2 {
+    font-size: 28px;
+  }
+
+  .info-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .quote {
+    padding: 60px 0;
+  }
+
+  .quote-text {
+    font-size: 22px;
+  }
+
+  .quote-author {
+    font-size: 18px;
+  }
+
+  .cta {
+    padding: 60px 0;
+  }
+
+  .cta-box {
+    padding: 20px;
+  }
+
+  .cta-text h3 {
+    font-size: 20px;
+  }
+}
